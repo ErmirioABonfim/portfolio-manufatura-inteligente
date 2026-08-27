@@ -7,3 +7,6 @@
 @media(max-width:1100px){.journey-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){.journey-grid{grid-template-columns:1fr}.journey-grid article{min-height:auto}.value-chain{align-items:flex-start;flex-direction:column}.value-chain span:before{content:"↓"}}
 @media(max-width:560px){.portrait-frame img{height:470px}}
+.value-areas{background:#f2f7ff}.value-topics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.value-topics article{display:flex;flex-direction:column;min-height:270px;padding:27px;border:1px solid #dce7f5;border-radius:13px;background:#fff}.value-topics span{font-size:9px;font-weight:800;letter-spacing:.14em;color:#2678ff}.value-topics h3{margin:25px 0 11px;font-size:21px}.value-topics p{color:var(--muted);font-size:12px;line-height:1.65}.value-topics b{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);color:#126f57;font-size:11px;line-height:1.5}
+@media(max-width:1100px){.value-topics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.value-topics{grid-template-columns:1fr}.value-topics article{min-height:auto}}

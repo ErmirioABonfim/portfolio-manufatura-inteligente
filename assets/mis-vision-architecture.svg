@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="340" viewBox="0 0 1400 340" role="img" aria-labelledby="title desc">
+  <title id="title">Fluxo operacional do MIS-Vision</title>
+  <desc id="desc">Câmera envia imagem para processamento edge, visão computacional, regras de contexto, eventos e decisão operacional.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071016"/><stop offset="1" stop-color="#0d2730"/></linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#75efc0"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1400" height="340" rx="18" fill="url(#bg)"/>
+  <path d="M120 170 C260 170 250 105 390 105 S530 225 680 225 S830 105 980 105 S1110 170 1280 170" fill="none" stroke="#35515c" stroke-width="3"/>
+  <path d="M120 170 C260 170 250 105 390 105" fill="none" stroke="url(#flow)" stroke-width="6" filter="url(#glow)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(70 125)"><circle cx="50" cy="45" r="42" fill="#102a31" stroke="#75efc0" stroke-width="3"/><path d="M27 34h35l13 11v27H27z" fill="none" stroke="#f4f7f5" stroke-width="4"/><circle cx="51" cy="53" r="10" fill="none" stroke="#75efc0" stroke-width="4"/><text x="50" y="117" text-anchor="middle" fill="#f4f7f5" font-size="18" font-weight="700">CÂMERA</text><text x="50" y="141" text-anchor="middle" fill="#9fb0b6" font-size="13">RTSP · IP · vídeo</text></g>
+    <g transform="translate(340 60)"><circle cx="50" cy="45" r="42" fill="#102a31" stroke="#75efc0" stroke-width="3"/><path d="M28 29h44v32H28zm8 40h28M43 61v8M57 61v8" fill="none" stroke="#f4f7f5" stroke-width="4"/><text x="50" y="117" text-anchor="middle" fill="#f4f7f5" font-size="18" font-weight="700">EDGE</text><text x="50" y="141" text-anchor="middle" fill="#9fb0b6" font-size="13">captura · inferência</text></g>
+    <g transform="translate(630 180)"><circle cx="50" cy="45" r="42" fill="#102a31" stroke="#3b82f6" stroke-width="3"/><path d="M30 52c10-26 30-26 40 0M35 61h30M50 25v43" fill="none" stroke="#f4f7f5" stroke-width="4"/><text x="50" y="117" text-anchor="middle" fill="#f4f7f5" font-size="18" font-weight="700">CONTEXTO</text><text x="50" y="141" text-anchor="middle" fill="#9fb0b6" font-size="13">zona · tempo · regra</text></g>
+    <g transform="translate(930 60)"><circle cx="50" cy="45" r="42" fill="#102a31" stroke="#3b82f6" stroke-width="3"/><path d="M31 27h38v42H31zM38 38h24M38 48h24M38 58h15" fill="none" stroke="#f4f7f5" stroke-width="4"/><text x="50" y="117" text-anchor="middle" fill="#f4f7f5" font-size="18" font-weight="700">EVENTO</text><text x="50" y="141" text-anchor="middle" fill="#9fb0b6" font-size="13">evidência · histórico</text></g>
+    <g transform="translate(1230 125)"><circle cx="50" cy="45" r="42" fill="#102a31" stroke="#75efc0" stroke-width="3"/><path d="M30 57l13-13 11 9 18-23" fill="none" stroke="#f4f7f5" stroke-width="4"/><text x="50" y="117" text-anchor="middle" fill="#f4f7f5" font-size="18" font-weight="700">DECISÃO</text><text x="50" y="141" text-anchor="middle" fill="#9fb0b6" font-size="13">tratativa · indicador</text></g>
+  </g>
+</svg>

@@ -24,3 +24,20 @@ python3 -m http.server 8088
 ```
 
 O PDF é gerado a partir do mesmo conteúdo do site para manter consistência.
+
+## Ilustração MIS-Vision
+
+A seção MIS-Vision usa uma animação conceitual própria, sem imagens de clientes ou de plantas reais:
+
+- `assets/mis-vision-showcase.gif` — sequência animada de detecção, contexto e geração de evento;
+- `assets/mis-vision-showcase-poster.png` — quadro final para revisão e fallback;
+- `assets/mis-vision-architecture.svg` — fluxo câmera → edge → contexto → evento → decisão.
+
+Para regenerar a animação:
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 scripts/generate_mis_vision_assets.py
+```
+
+A comunicação de EPIs descreve presença/ausência aparente de itens visíveis e exige validação no piloto. Ela não deve ser apresentada como certificação automática de conformidade.
